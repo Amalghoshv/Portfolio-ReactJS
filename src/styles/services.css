@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 20px; 
     margin: 20px;
   }
@@ -14,6 +15,7 @@
 }
 .subtitles{
   margin-left: 10%;
+  
 }
 .services-card{
   mask-image: url(../assets/img/blob.svg);
@@ -23,8 +25,16 @@
 .glass-card{
   background-color:rgb(24,24,24);
   background: linear-gradient(133deg, rgba(24,24,24,1) 0%, rgb(22, 22, 22) 90%, rgb(253, 2, 2) 100%);
- width: 230px;
+  width: 230px;
   border-radius: 15px;
   padding: 30px;
   box-shadow:0px 4px 6px rgba(0, 0, 0, 0.1);
+
+  
+}
+
+.glass-card:hover{
+  background-color:rgb(24,24,24);
+  background: linear-gradient(133deg, rgba(24,24,24,1) 20%, rgb(22, 22, 22) 50%, rgb(253, 2, 2) 100%);
+
 }

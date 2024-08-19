@@ -9,7 +9,7 @@ function Header() {
               <span className="up">HI!</span>
               <span className="down">I&apos;m ghosh</span>
               <p className="header-subtitle">WEB DEVELOPER </p>
-              <button className="worksBtn">Visit My Works</button>
+              {/* <button className="worksBtn">Visit My Works</button> */}
             </h1>
           </div>
           <div className="right-header">

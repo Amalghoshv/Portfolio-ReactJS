@@ -1,6 +1,20 @@
 import "../styles/about.css";
 
 function About() {
+  const handleDownload = () => {
+  
+    const cvLink = '/cv.pdf'
+  
+   
+    const link = document.createElement('a');
+    link.href = cvLink;
+    link.download = 'Amalghosh_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+  
+    document.body.removeChild(link);
+  };
+  
   return (
     <div className="about">
       <div className="about-img-holder">
@@ -11,7 +25,7 @@ function About() {
         />
       </div>
       <div className="about-caption">
-        <h2 className="section-title mb-3">About Me</h2>
+        <h2 className="section-title">About Me</h2>
         <p>
           Hello! I&apos;m Amalghosh, a passionate web developer specializing in
           frontend technologies. My current focus is on building dynamic and
@@ -21,7 +35,7 @@ function About() {
           creating Instagram filters and experimenting with the latest tech
           trends to keep my skills sharp.
         </p>
-        <button className="btn-cv">Download CV</button>
+        <button className="btn-cv"  onClick={handleDownload}>Download CV</button>
       </div>
       <div className="blob">
         <img src="../src/assets/img/blob1.svg" className="blob-img" alt="blob" />

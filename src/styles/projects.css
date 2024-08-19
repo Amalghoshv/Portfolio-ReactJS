@@ -1,10 +1,32 @@
+/* Container for the projects */
+.projects-container {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Make the cards container a horizontal scroll area */
+.cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Snap scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    padding: 10px;
+    scroll-behavior: smooth; /* Smooth scroll */
+}
+
+/* Each card will snap into place */
 .project-card {
+    flex: 0 0 80%; /* Card takes 80% of the screen width on small screens */
+    scroll-snap-align: center; /* Snap to center */
     position: relative; 
     width: 300px;
     height: 350px;
     border-radius: 20px;
     padding: 20px;
     overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.1); /* Light background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .project-card::before {
@@ -34,53 +56,52 @@
     mask-size: contain;
     mask-position: center;
     transition: transform 2s ease;
-
 }
+
 .card-img:hover {
     transform: scale(0.8); 
     animation: fadeMask 1s forwards ease; 
 }
-
 
 @keyframes fadeMask {
     0% {
         mask-image: url(../assets/img/splash.svg);
         opacity: 1;
     }
-    25%{
-        opacity:0.25
+    25% {
+        opacity: 0.25;
     }
-    50%{
-        opacity:0.50
+    50% {
+        opacity: 0.50;
     }
-    75%{
-        opacity:0.75
+    75% {
+        opacity: 0.75;
     }
     100% {
         mask-image: none;
         opacity: 1;
     }
 }
-.projects-container {
-    margin: 20px 80px;
+
+/* Responsive design for smaller screens */
+@media (min-width: 768px) {
+    .cards {
+        overflow-x: visible;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .project-card {
+        flex: 1;
+        margin-right: 0;
+        width: auto;
+    }
 }
 
-.project-title {
-    color:#fff;
-    font-size: 20px;
-    z-index: 1; 
-    position: relative;
-    text-align: center;
-}
-.project-subtitle{
-    font-size: 2vh;
-
-}
-.projects-heading{
-        color: red;
-        font-size: 30px;
-        margin-left: 5%;
-        margin: 20px 40px;
-        
-    
+.projects-heading {
+    color: red;
+    font-size: 30px;
+    margin-left: 5%;
+    margin: 20px 40px;
 }

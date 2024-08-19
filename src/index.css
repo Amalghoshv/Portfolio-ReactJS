@@ -3,13 +3,19 @@
 html, body {
   height: 100%;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   background: linear-gradient(109.6deg, rgb(6, 2, 2) 32.4%, rgb(137, 30, 47) 98.8%);
   background-size: cover;
-  background-attachment: fixed; /* Makes the background stay fixed as you scroll */
+  background-attachment: fixed; 
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
+}
+*{
+  
+    cursor: url('./assets/img/cursor.svg'), auto;	
+  
 }

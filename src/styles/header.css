@@ -20,7 +20,7 @@ h1{
   .header-content {
     display: flex;
     justify-content: space-evenly; 
-    align-items: center; /* Vertically align items */
+    align-items: center; 
     width: 100%;
   }
   
@@ -28,7 +28,7 @@ h1{
     font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
     font-weight: 500;
     color: #444;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     position: relative;
     display: block;
   }

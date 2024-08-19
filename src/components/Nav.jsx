@@ -1,8 +1,14 @@
 import "../styles/nav.css";
+import SmoothScroll from "smooth-scroll";
 import { useEffect,useState } from "react";
 function Nav() {
     const [menuOpen,setMenuOpen] = useState(false)
     useEffect(() => {
+       new SmoothScroll('a[href*="#"]', {
+        speed: 800,
+        speedAsDuration: true,
+        easing: "easeInOutCubic",
+      });
         const handleScroll = () => {
           const navbar = document.querySelector(".navbar");
           if (window.scrollY > 50) {
@@ -17,7 +23,7 @@ function Nav() {
           window.removeEventListener("scroll", handleScroll);
         };
       }, []);
-
+    
       const toggleMenu = ()=>{
         setMenuOpen(!menuOpen)
       }
@@ -33,28 +39,28 @@ function Nav() {
         </div>
           <ul className={`nav ${menuOpen ? "open" : ""}`}>
             <li className="item">
-              <a className="link" href="#home">
+              <a className="link" href="#header" >
                 Home
               </a>
             </li>
             <li className="item">
-              <a className="link" href="#about">
+              <a className="link" href="#about" >
                 About
               </a>
             </li>
             <li className="item">
-              <a className="link" href="#portfolio">
-                Portfolio
+              <a className="link" href="#services" >
+                Services
               </a>
             </li>
             
             <li className="item">
-              <a className="link" href="#blog">
+              <a className="link" href="#projects" >
                 Works
               </a>
             </li>
             <li className="item">
-              <a className="link" href="#contact">
+              <a className="link" href="#contact" >
                 Contact
               </a>
             </li>
