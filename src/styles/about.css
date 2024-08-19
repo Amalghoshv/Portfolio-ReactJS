@@ -1,0 +1,50 @@
+.about {
+    display: flex;
+    margin: 20px;
+    position: relative; /* Make .about the containing block for absolutely positioned elements */
+    overflow: hidden; /* Hide any overflow from the blob image */
+}
+
+.about-img {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    z-index: 2; /* Ensure the image stays above the blob */
+}
+
+.about-caption {
+    z-index: 2; /* Ensure the text stays above the blob */
+    position: relative;
+}
+
+.blob {
+    position: absolute; /* Position the blob relative to .about */
+    right: -150px; /* Move the blob to the right side of the .about container */
+    top: 50%; /* Vertically center the blob within .about */
+    transform: translateY(-50%); /* Adjust for true vertical centering */
+    z-index: 1; /* Ensure the blob stays behind other content */
+}
+
+.blob-img {
+    width: 500px;
+    height: 500px;
+    opacity: 0.3; /* Optional: make the blob slightly transparent */
+}
+
+p {
+    color: #fff;
+    letter-spacing: 4px;
+}
+
+h2 {
+    color: aliceblue;
+}
+
+.btn-cv {
+    background-color: transparent;
+    border: 2px solid red;
+    color: #fff;
+    border-radius: 20px;
+    padding: 15px 25px;
+    font-family: "Roboto Condensed", sans-serif;
+}

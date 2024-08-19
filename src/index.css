@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=New+Amsterdam&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(109.6deg, rgb(6, 2, 2) 32.4%, rgb(137, 30, 47) 98.8%);
+  background-size: cover;
+  background-attachment: fixed; /* Makes the background stay fixed as you scroll */
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}

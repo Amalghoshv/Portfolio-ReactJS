@@ -1,0 +1,86 @@
+.project-card {
+    position: relative; 
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../assets/img/mesh-346.png);
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); 
+    z-index: -1; 
+    border-radius: inherit;
+}
+
+.card-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    z-index: 1; 
+    position: relative;   
+    mask-image: url(../assets/img/splash.svg);
+    mask-mode: alpha;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    transition: transform 2s ease;
+
+}
+.card-img:hover {
+    transform: scale(0.8); 
+    animation: fadeMask 1s forwards ease; 
+}
+
+
+@keyframes fadeMask {
+    0% {
+        mask-image: url(../assets/img/splash.svg);
+        opacity: 1;
+    }
+    25%{
+        opacity:0.25
+    }
+    50%{
+        opacity:0.50
+    }
+    75%{
+        opacity:0.75
+    }
+    100% {
+        mask-image: none;
+        opacity: 1;
+    }
+}
+.projects-container {
+    margin: 20px 80px;
+}
+
+.project-title {
+    color:#fff;
+    font-size: 20px;
+    z-index: 1; 
+    position: relative;
+    text-align: center;
+}
+.project-subtitle{
+    font-size: 2vh;
+
+}
+.projects-heading{
+        color: red;
+        font-size: 30px;
+        margin-left: 5%;
+        margin: 20px 40px;
+        
+    
+}

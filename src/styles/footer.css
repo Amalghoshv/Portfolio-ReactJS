@@ -1,0 +1,50 @@
+.footer-main {
+    backdrop-filter: blur(8px) saturate(68%);
+    -webkit-backdrop-filter: blur(8px) saturate(68%);
+    background-color: rgba(208, 2, 27, 0); 
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 10px 20px; 
+    margin: 0 auto;
+    width: 80%;
+    bottom: 0;
+
+    
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    width: 100%; 
+    margin-top: -25px;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 20px; 
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .footer-text {
+    color: red;
+    font-size: 30px;
+    font-family: "New Amsterdam", sans-serif;
+  }
+  
+  .footer-p {
+    color: red;
+    font-size: 15px;
+    font-family: "New Amsterdam", sans-serif;
+    text-align: center; 
+    margin:0;
+    margin-top: -20px;
+  }
+  
