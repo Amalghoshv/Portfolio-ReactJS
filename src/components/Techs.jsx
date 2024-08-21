@@ -42,7 +42,8 @@ function Techs() {
         const smoothScroll = () => {
             if (scrollRef.current) {
               scrollPosition += 0.5; 
-              scrollRef.current.scrollLeft = scrollPosition;
+              scrollRef.current.scrollBy({ left: 1, behavior: 'smooth' });
+
       
               if (scrollPosition >= scrollRef.current.scrollWidth / 2) {
                 scrollPosition = 0; 
