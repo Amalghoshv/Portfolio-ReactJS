@@ -9,7 +9,7 @@ function Header() {
         <div className="header-content">
           <div className="left-header">
             <div className="header-title">
-              <h1  className="up">HI!</h1>
+              <h1  className="up">Hi!</h1>
               <h1  className="down">I&apos;m ghosh</h1>
               {/* <span className="up">HI!</span>
               <span className="down">I&apos;m ghosh</span> */}

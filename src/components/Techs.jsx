@@ -10,7 +10,7 @@ import tailwind  from  "../assets/techs/tailwind.svg"
 import netlify  from  "../assets/techs/netlify.svg"
 import erpnext  from  "../assets/techs/erpnext.svg"
 import js  from  "../assets/techs/js.svg"
-import sparkar  from  "../assets/img/sparkar.svg"
+// import sparkar  from  "../assets/img/sparkar.svg"
 import chatgpt from "../assets/techs/chatgpt.svg"
 import scss from "../assets/techs/scss.svg"
 import mongodb from "../assets/techs/mongodb.svg"
@@ -27,7 +27,7 @@ const tech = [
   { logo: tailwind },
   { logo: netlify },
   { logo: erpnext },
-  { logo: sparkar },
+  // { logo: sparkar },
   { logo: github },
   { logo: js },
   { logo: chatgpt },

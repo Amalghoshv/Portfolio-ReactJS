@@ -3,10 +3,7 @@ import "../styles/about.css";
 function About() {
   const aboutImg= "/img/avatar.png";
   const handleDownload = () => {
-  
     const cvLink = '/cv.pdf'
-  
-   
     const link = document.createElement('a');
     link.href = cvLink;
     link.download = 'Amalghosh_CV.pdf';

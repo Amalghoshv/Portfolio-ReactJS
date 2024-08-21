@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useState } from "react";
 
 function Contact() {
+  const sendIcon = "./icons/send.svg"
   
   const [formData, setFormData] = useState({
     name: "",
@@ -51,7 +52,7 @@ function Contact() {
     <div className="container">
       <div className="contact">
         <div>
-          <p className="subtitle">How can you communicate?</p>
+          <p className="contact-subtitle">How can you communicate?</p>
         </div>
         <div className="flex ">
           <div>
@@ -98,7 +99,7 @@ function Contact() {
                   ></textarea>
                 </div>
                 <div className="form-group">
-                  <button className="sent-btn">Send Message</button>
+                  <button className="sent-btn">Send Message <img className="sendicon" src={sendIcon} alt="icn" /></button>
                 </div>
               </div>
             </form>

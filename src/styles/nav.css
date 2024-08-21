@@ -13,14 +13,14 @@ nav {
 
 .container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 25px 10%;
 }
 
 .logo {
   color: red;
-  font-size: 35px;
+  font-size: 50px;
   font-family: "New Amsterdam", sans-serif;
   text-decoration: none;
 }
@@ -43,14 +43,17 @@ nav {
 }
 
 .link {
+  display: inline-block;
   color: white;
   text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s ease;
+  font-size: 25px;
+  /* transition: color 0.3s ease; */
+  transition: transform 0.3s ease;
 }
 
 .link:hover {
   color: red;
+  transform: translate3d(10px, -10px, 20px);
 }
 
 @media (max-width: 768px) {

@@ -45,7 +45,7 @@ function Footer() {
       <div>
         <p className="footer-p">
           Built from scratch with &#10084; ©Copyright 2024, ghosDev All Rights
-          Reserved.
+          Reserved
         </p>
       </div>
     </div>
