@@ -13,13 +13,14 @@
     
 
 }
-/* .form-row{
+.contact{
     margin: 0 auto;
-} */
+}
 .title{
     color: red;
     font-size: 30px;
     text-align: center;
+    font-family: "Poppins", sans-serif;
 }
 .contact-form{
     backdrop-filter: blur(8px) saturate(68%);
@@ -96,19 +97,32 @@ textarea:focus{
 
 @media (max-width:475px) {
     .title{
-        color:#fff;
-        font-size: 22px;
+        color:red;
+        font-size: 20px;
     }
     .contact-form{
         width: 300px;
         height:300px;
-        margin:0 auto;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     input ,textarea{
         width:250px; 
         margin-top: 5px;   
      }
      .contact-img-div{
-        display: none;
+        display: block
      }
+     .contact{
+        margin:0 auto;
+       
+     }
+     .flex{
+        display: block;
+        
+    
+    }
+   
     }

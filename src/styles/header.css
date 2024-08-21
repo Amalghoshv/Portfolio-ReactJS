@@ -16,6 +16,10 @@ h1{
     align-items: center; 
 
   }
+  .header-subtitle{
+    font-size: 600px;
+    color: #fff;
+  }
   
   .header-content {
     display: flex;
@@ -34,50 +38,36 @@ h1{
   }
   
   .header .header-content .header-title .down {
-    font-size: calc(30px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
+    font-size: calc(50px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
     margin-bottom: 0;
-    position: relative;
+   
     display: block;
   }
   
-  .header .header-content .header-subtitle {
-    font-size: calc(10px + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
-    letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px) / (1300 - 300)));
+  .header-subtitle {
+    font-size: 30px;
     opacity: .8;
     
   }
   
-  .header .header-content .btn {
-    position: relative;
-    border-radius: 20px;
-    padding: 8px 15px;
-  }
-  .worksBtn{
-    border:2px solid white;
-    border-radius: 15%;
-    padding:15px;
-    background-color: transparent;
-    color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 500;
-  }
+
   .right-header{
     float:right;
     width:500px;
     height:500px;
     margin-right:20px;
+    flex: 1;
+    display: flex;
+    z-index: -1;
+    width: 50%;
+    
   }
   .left-header {
     flex: 1;
     margin-left: 50px;
+    width: 50%;
   }
   
-  .right-header {
-    flex: 1;
-    display: flex;
-    z-index: -1;
-    
-  }
   @keyframes upDown {
     0%, 100% {
       transform: translateY(0); 
@@ -90,4 +80,58 @@ h1{
     display: inline-block;
     animation: upDown 3s ease-in-out infinite; 
   }
- 
+/* Extra small devices (phones, 0px and up) */
+@media only screen and (max-width: 576px) {
+  .header-content {
+    display: block;
+    
+    width: 100%;
+  }
+  .right-header{
+    width:350px;
+    height:350px;
+    margin-top: -100px;
+    z-index: -10;
+    
+    
+  }
+  .header-content{
+    display: block;
+  }
+  .left-header {
+    flex: 1;
+    margin-left: 50px;
+
+    
+  }
+  .down{
+    font-size: 50px;
+  }
+  .header-subtitle {
+    font-size: 20px;
+    opacity: .8;
+    
+  }
+  
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  /* Styles for small devices */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* Styles for tablets */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* Styles for desktops */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* Styles for large desktops */
+}
+

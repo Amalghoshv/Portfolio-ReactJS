@@ -17,7 +17,7 @@ function About() {
   
   return (
     <div className="about">
-      <div className="about-img-holder">
+      <div className="about-img-holder" data-aos="fade-up">
         <img
           src="/src/assets/img/avatar.png"
           className="about-img"
@@ -25,9 +25,10 @@ function About() {
         />
       </div>
       <div className="about-caption">
-        <h2 className="section-title">About Me</h2>
-        <p>
-          Hello! I&apos;m Amalghosh, a passionate web developer specializing in
+        <h2 className="section-title"  data-aos="fade-up"
+    >About Me</h2>
+        <p className="about-p">
+          Hello! I&apos;m Amalghosh,a passionate web developer specializing in
           frontend technologies. My current focus is on building dynamic and
           user-friendly interfaces using tools like React.js and Vue.js. I’m
           always exploring new technologies and finding innovative ways to

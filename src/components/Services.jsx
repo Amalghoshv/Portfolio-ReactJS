@@ -4,7 +4,7 @@ import "../styles/services.css";
 function Services() {
 
   return (
-    <div className="">
+    <div className="services-container">
       <p className="subtitles">What I Do ?</p>
       <h5 className="titles">Services</h5>
       <div className="cards-container">

@@ -11,10 +11,15 @@
     margin: 20px;
     z-index: 2; /* Ensure the image stays above the blob */
 }
+.about-p{
+    font-family: "Poppins", sans-serif;
+}
 
 .about-caption {
     z-index: 2; /* Ensure the text stays above the blob */
     position: relative;
+    font-family: "Poppins", sans-serif;
+    
 }
 
 .blob {
@@ -26,6 +31,7 @@
 }
 .section-title{
     color: red;
+    font-family: "Poppins", sans-serif;
 }
 
 .blob-img {
@@ -36,7 +42,7 @@
 
 p {
     color: #fff;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
 }
 
 h2 {
@@ -62,7 +68,7 @@ h2 {
     font-family: "Roboto Condensed", sans-serif;
 
 }
-@media (max-width:475px) {
+@media (max-width:575px) {
  .about{
     display: flex;
     grid-row: block;

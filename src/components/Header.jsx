@@ -1,15 +1,15 @@
 import "../styles/header.css";
+import { ReactTyped } from "react-typed";
 function Header() {
   return (
     <div className="header">
       <div className="overlay"></div>
-        <div className="header-content container">
+        <div className="header-content">
           <div className="left-header">
             <h1 className="header-title">
               <span className="up">HI!</span>
               <span className="down">I&apos;m ghosh</span>
-              <p className="header-subtitle">WEB DEVELOPER </p>
-              {/* <button className="worksBtn">Visit My Works</button> */}
+              <ReactTyped className="header-subtitle" strings={["WEB DEVELOPER ","WEB DESIGNER", "SPARK AR CREATOR"]} loop typeSpeed={40}  backSpeed={50} />
             </h1>
           </div>
           <div className="right-header">

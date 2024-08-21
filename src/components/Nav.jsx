@@ -1,8 +1,9 @@
 import "../styles/nav.css";
 import SmoothScroll from "smooth-scroll";
 import { useEffect,useState } from "react";
+import { Spin as Hamburger } from 'hamburger-react'
 function Nav() {
-    const [menuOpen,setMenuOpen] = useState(false)
+    const [isOpen,setOpen] = useState(false)
     useEffect(() => {
        new SmoothScroll('a[href*="#"]', {
         speed: 800,
@@ -24,20 +25,19 @@ function Nav() {
         };
       }, []);
     
-      const toggleMenu = ()=>{
-        setMenuOpen(!menuOpen)
-      }
+    
   return (
     <div>
-      <nav className={`navbar ${menuOpen?'active': ""}`}>
+      <nav className={`navbar ${isOpen?'active': ""}`}>
         <div className="container">
           <a className="logo" href="#">
             Ghoshdev
           </a>
-          <div className="hamburger" onClick={toggleMenu}>
+          <Hamburger className="hamburger-react" toggled={isOpen} toggle={setOpen} color="red" />
+          {/* <div className="hamburger" onClick={toggleMenu}>
           &#9776;
-        </div>
-          <ul className={`nav ${menuOpen ? "open" : ""}`}>
+        </div> */}
+          <ul className={`nav ${isOpen ? "open" : ""}`}>
             <li className="item">
               <a className="link" href="#header" >
                 Home

@@ -1,4 +1,6 @@
-
+.services-container{
+  width: 100%;
+}
 .cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -11,6 +13,7 @@
     color: red;
     font-size: 30px;
     margin-left: 10%;
+    font-family: "Poppins", sans-serif;
     
 }
 .subtitles{

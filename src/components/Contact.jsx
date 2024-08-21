@@ -1,12 +1,15 @@
 import "../styles/contact.css";
 import emailjs from "@emailjs/browser";
+import { ToastContainer,toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useState } from "react";
+
 function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  }); 
+    name: "",
+    email: "",
+    message: "",
+  });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -16,34 +19,51 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_cedyrqk', 'template_bkrokoe', e.target, 'nWJpqYLF_rKxgiFf-'
-    )
-      .then((result) => {
-          console.log('Email successfully sent!', result.text);
-      }, (error) => {
-          console.log('Failed to send email:', error.text);
-      });
+    emailjs
+      .sendForm(
+        "service_cedyrqk",
+        "template_bkrokoe",
+        e.target,
+        "nWJpqYLF_rKxgiFf-"
+      )
+      .then(
+        (result) => {
 
-    setFormData({ name: '', email: '', message: '' }); 
+          console.log("Email successfully sent!", result.text);
+         
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+          });
+          
+          toast.success("Mail sent successfully!");
+         
+        },
+        (error) => {
+          console.log("Failed to send email:", error.text);
+          toast.error("Failed to send email. Please try again later.");
+        }
+      );
   };
   return (
     <div className="container">
       <div className="contact">
         <div>
           <p className="subtitle">How can you communicate?</p>
-          
         </div>
         <div className="flex ">
           <div>
             <form action="" className="contact-form" onSubmit={handleSubmit}>
               <div className="form-row">
-              <h5 className="title">Contact Me!</h5>
+                <h5 className="title">Contact Me!</h5>
                 <div className="form-group">
                   <input
                     name="name"
                     type="text"
-                    id="email"
+                    id="name"
                     // size={40}
+                    value={formData.name}
                     className="form-control"
                     placeholder="Your Name"
                     onChange={handleChange}
@@ -56,6 +76,7 @@ function Contact() {
                     type="email"
                     id="email"
                     // size={40}
+                    value={formData.email}
                     className="form-control"
                     placeholder="Enter Email"
                     onChange={handleChange}
@@ -67,6 +88,7 @@ function Contact() {
                     name="message"
                     id="message"
                     rows="5"
+                    value={formData.message}
                     // cols={40}
                     // size={40}
                     className="form-control"
@@ -89,6 +111,18 @@ function Contact() {
           </div>
         </div>
       </div>
+      <ToastContainer 
+        position="top-right" 
+        autoClose={3000} 
+        hideProgressBar={false} 
+        newestOnTop={false} 
+        closeOnClick 
+        rtl={false} 
+        pauseOnFocusLoss 
+        draggable 
+        pauseOnHover 
+        theme="light" 
+      />
     </div>
   );
 }

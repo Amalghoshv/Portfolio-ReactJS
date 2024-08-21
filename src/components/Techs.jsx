@@ -61,7 +61,7 @@ function Techs() {
     <div className="techs-container" ref={scrollRef}>
         <div className="techs-scroll">  
       {tech.map((technology, index) => (
-        <div key={index} className="tech-item">
+        <div key={index} className="tech-item" >
           <img
             src={technology.logo}
             alt='logos'

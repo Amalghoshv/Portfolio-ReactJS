@@ -25,7 +25,7 @@ nav {
   text-decoration: none;
 }
 
-.hamburger {
+.hamburger-react {
   display: none;
   font-size: 30px;
   cursor: pointer;
@@ -39,6 +39,7 @@ nav {
 
 .item {
   margin-left: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 .link {
@@ -53,7 +54,7 @@ nav {
 }
 
 @media (max-width: 768px) {
-  .hamburger {
+  .hamburger-react {
     display: block;
   }
   .container {
@@ -70,8 +71,20 @@ nav {
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 20px;
+    background-image: url('../assets/img/navbg.png');
+    background-position: left;
+   
+    background-blend-mode: soft-light;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 5%;
+   
+    backdrop-filter: blur(10px) saturate(174%);
+    -webkit-backdrop-filter: blur(19px) saturate(4%);
+    background-color: rgba(0, 0, 0, 0.56);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding:  20px;
+    
   }
 
   .navbar.active .nav {
@@ -83,7 +96,10 @@ nav {
   }
 
   .item {
-    margin: 10px 0;
+    margin: 8px 0;
     text-align: center;
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+   
   }
 }
