@@ -1,6 +1,7 @@
 
 
 @import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 h1{
     color:red;
@@ -17,8 +18,10 @@ h1{
 
   }
   .header-subtitle{
-    font-size: 600px;
+    font-size: 60px;
     color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    
   }
   
   .header-content {
@@ -44,16 +47,10 @@ h1{
     display: block;
   }
   
-  .header-subtitle {
-    font-size: 30px;
-    opacity: .8;
-    
-  }
-  
-
+ 
   .right-header{
     float:right;
-    width:500px;
+    width:450px;
     height:500px;
     margin-right:20px;
     flex: 1;
@@ -61,11 +58,12 @@ h1{
     z-index: -1;
     width: 50%;
     
+    
   }
   .left-header {
     flex: 1;
     margin-left: 50px;
-    width: 50%;
+    width: 60%;
   }
   
   @keyframes upDown {
@@ -109,8 +107,10 @@ h1{
     font-size: 50px;
   }
   .header-subtitle {
-    font-size: 20px;
-    opacity: .8;
+    margin-top: 150px;
+    font-size: 19px;
+    z-index: -1;
+    
     
   }
   
