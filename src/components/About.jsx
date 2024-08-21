@@ -1,6 +1,7 @@
 import "../styles/about.css";
 
 function About() {
+  const aboutImg= "/img/avatar.png";
   const handleDownload = () => {
   
     const cvLink = '/cv.pdf'
@@ -19,7 +20,7 @@ function About() {
     <div className="about">
       <div className="about-img-holder" data-aos="fade-up">
         <img
-          src="/src/assets/img/avatar.png"
+          src={aboutImg}
           className="about-img"
           alt="avatar"
         />
