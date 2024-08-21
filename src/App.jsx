@@ -28,10 +28,10 @@ const App = () => {
         <Services />
       </div>
       <Techs id="techs" />
-      <div id="projects" data-aos="fade-up">
+      <div id="projects" >
         <Projects />
       </div>
-      <div id="contact" data-aos="fade-left">
+      <div id="contact" data-aos="fade-up">
         <Contact />
       </div>
 
