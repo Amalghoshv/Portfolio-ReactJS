@@ -1,7 +1,6 @@
 import html from "../assets/techs/html.svg";
 import css from "../assets/techs/css.svg";
 import react from "../assets/techs/reactjs.svg";
-// import js from "../assets/techs/js.svg";
 import vue from "../assets/techs/vuejs.svg";
 import  nodejs from "../assets/techs/nodejs.svg";
 import  Bootstrap from  "../assets/techs/bootstrap.svg"

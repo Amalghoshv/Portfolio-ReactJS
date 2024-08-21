@@ -1,6 +1,8 @@
 import "../styles/header.css";
+
 import { ReactTyped } from "react-typed";
 function Header() {
+  const headerImg = "/img/right.svg";
   return (
     <div className="header">
       <div className="overlay"></div>
@@ -15,7 +17,7 @@ function Header() {
           <div className="right-header">
             <img
               className="right-header-img"
-              src="/src/assets/img/right.svg"
+              src={headerImg}
               alt="Right Header"
             />
           </div>
