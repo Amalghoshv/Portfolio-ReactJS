@@ -8,10 +8,12 @@ function Header() {
       <div className="overlay"></div>
         <div className="header-content">
           <div className="left-header">
-            <h1 className="header-title">
-              <span className="up">HI!</span>
-              <span className="down">I&apos;m ghosh</span>
-            </h1>
+            <div className="header-title">
+              <h1  className="up">HI!</h1>
+              <h1  className="down">I&apos;m ghosh</h1>
+              {/* <span className="up">HI!</span>
+              <span className="down">I&apos;m ghosh</span> */}
+            </div>
             <ReactTyped className="header-subtitle" strings={["WEB DEVELOPER ","WEB DESIGNER","SPARK AR CREATOR"]} loop typeSpeed={40}  backSpeed={50} />
 
           </div>
