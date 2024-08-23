@@ -16,7 +16,7 @@ function Footer() {
             >
               <img
                 className="icon"
-                src="../src/assets/techs/github.svg"
+                src="/icons/github.svg"
                 alt="GitHub"
               />
             </a>
@@ -25,7 +25,7 @@ function Footer() {
             <a href="https://www.instagram.com/_ghosh__/" target="_blank">
               <img
                 className="icon"
-                src="../src/assets/techs/footer-insta.svg"
+                src="/icons/footer-insta.svg"
                 alt=""
               />
             </a>
@@ -34,7 +34,7 @@ function Footer() {
             <a href="https://www.linkedin.com/in/amalghoshv/" target="_blank">
               <img
                 className="icon"
-                src="../src/assets/techs/footer-linkedin.svg"
+                src="/icons/footer-linkedin.svg"
                 alt=""
               />
             </a>
