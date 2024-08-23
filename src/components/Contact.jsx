@@ -54,7 +54,7 @@ function Contact() {
         <div>
           <p className="contact-subtitle">How can you communicate?</p>
         </div>
-        <div className="flex ">
+        <div className="flex">
           <div>
             <form action="" className="contact-form" onSubmit={handleSubmit}>
               <div className="form-row">

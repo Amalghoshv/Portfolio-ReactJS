@@ -138,15 +138,22 @@ textarea:focus{
         margin-top: 5px;   
      }
      .contact-img-div{
-        display: block
+        display: block;
+        margin-top:10px;
+        text-align:center
      }
      .contact{
         margin:0 auto;
        
      }
      .flex{
+        margin: 0 auto;
+        display: block;
+        
+      }
+     /* .flex{
         display: block;  
     
-    }
+    } */
    
     }

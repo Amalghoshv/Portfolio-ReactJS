@@ -64,6 +64,7 @@
     color: #ddd;
   }
   @media (max-width: 768px) {
+  
     .cards{
       width:200px;
     }
