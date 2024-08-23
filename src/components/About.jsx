@@ -37,7 +37,7 @@ function About() {
         <button className="btn-cv"  onClick={handleDownload}>Download CV</button>
       </div>
       <div className="blob">
-        <img src="../src/assets/img/blob1.svg" className="blob-img" alt="blob" />
+        <img src="/img/blob1.svg" className="blob-img" alt="blob" />
       </div>
     </div>
   );

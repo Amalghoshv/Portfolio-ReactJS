@@ -12,7 +12,7 @@ function Projetcs() {
           </p>
           <img
             className="card-img"
-            src="../src/assets/img/fuelexpense.jpeg"
+            src="/img/fuelexpense.jpeg"
             alt="fuel expense"
           />
         </div>
@@ -23,7 +23,7 @@ function Projetcs() {
           </p>
           <img
             className="card-img"
-            src="../src/assets/img/expense-tracker.jpeg"
+            src="/img/expense-tracker.jpeg"
             alt="fuel expense"
           />
         </div>
@@ -34,7 +34,7 @@ function Projetcs() {
         </p>
         <img
           className="card-img"
-          src="../src/assets/img/16544.jpg"
+          src="/img/16544.jpg"
           alt="fuel expense"
         />
       </div>

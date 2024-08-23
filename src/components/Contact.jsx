@@ -107,7 +107,7 @@ function Contact() {
           <div className="contact-img-div">
             <img
               className="contact-img"
-              src="../src/assets/img/contact.png"
+              src="/img/contact.png"
               alt="contact img"
             />
           </div>

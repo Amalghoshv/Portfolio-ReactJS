@@ -43,7 +43,7 @@
     font-family: "New Amsterdam", sans-serif;
     text-align: center; 
     margin:0;
-    margin-top: -8px;
+    margin-top: -6px;
   }
   @media (max-width:475px) {
     .footer-main{

@@ -56,7 +56,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(../assets/img/mesh-346.png);
+    background-image: url(img/mesh-346.png);
     background-size: cover;
     background-position: center;
     filter: blur(5px); 
@@ -70,7 +70,7 @@
     border-radius: 20px;
     z-index: 1; 
     position: relative;   
-    mask-image: url(../assets/img/splash.svg);
+    mask-image: url(/img/splash.svg);
     mask-mode: alpha;
     mask-repeat: no-repeat;
     mask-size: contain;
@@ -85,7 +85,7 @@
 
 @keyframes fadeMask {
     0% {
-        mask-image: url(../assets/img/splash.svg);
+        mask-image: url(/img/splash.svg);
         opacity: 1;
     }
     25% {

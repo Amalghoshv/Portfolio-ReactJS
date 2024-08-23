@@ -19,6 +19,7 @@
   .techs-scroll {
     display: inline-flex;
     gap: 20px;
+    
   }
   
   .tech-item {

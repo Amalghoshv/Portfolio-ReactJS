@@ -1,15 +1,16 @@
-import html from "../assets/techs/html.svg";
-import css from "../assets/techs/css.svg";
-import react from "../assets/techs/reactjs.svg";
-import vue from "../assets/techs/vuejs.svg";
-import  nodejs from "../assets/techs/nodejs.svg";
-import  Bootstrap from  "../assets/techs/bootstrap.svg"
+import html from "/icons/html.svg";
+import css from "/icons/css.svg";
+import js  from  "/icons/js.svg"
+import react from "/icons/reactjs.svg";
+import vue from "/icons/vuejs.svg";
+import  nodejs from "/icons/nodejs.svg";
+import  bootstrap from  "../assets/techs/bootstrap.svg"
 import git  from  "../assets/techs/git.svg"
 import github  from  "../assets/techs/github.svg"
 import tailwind  from  "../assets/techs/tailwind.svg"
 import netlify  from  "../assets/techs/netlify.svg"
 import erpnext  from  "../assets/techs/erpnext.svg"
-import js  from  "../assets/techs/js.svg"
+
 // import sparkar  from  "../assets/img/sparkar.svg"
 import chatgpt from "../assets/techs/chatgpt.svg"
 import scss from "../assets/techs/scss.svg"
@@ -22,7 +23,7 @@ const tech = [
   { logo: nodejs },
   { logo: react },
   { logo: vue },
-  { logo: Bootstrap },
+  { logo: bootstrap },
   { logo: git },
   { logo: tailwind },
   { logo: netlify },
@@ -47,7 +48,10 @@ function Techs() {
       
               if (scrollPosition >= scrollRef.current.scrollWidth / 2) {
                 scrollPosition = 0; 
+                scrollRef.current.scrollLeft = 0;
+                
               }
+              
             }
       
             requestAnimationFrame(smoothScroll);
