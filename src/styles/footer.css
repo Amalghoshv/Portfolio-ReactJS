@@ -48,12 +48,24 @@
   @media (max-width:475px) {
     .footer-main{
       bottom: 0;
+      padding: 5px 10px;
 
     }
+    .footer {
+      
+      justify-content: space-between; 
+      padding: 0px 6px
+      
+      /* margin-top: -25px; */
+    }
     .icon{
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
 
+    }
+    .icons {
+      display: flex;
+      gap: 8px; 
     }
     .footer-text {
       font-size: 22px;

@@ -6,12 +6,12 @@ import vue from "/icons/vuejs.svg";
 import  nodejs from "/icons/nodejs.svg";
 import  bootstrap from  "../assets/techs/bootstrap.svg"
 import git  from  "../assets/techs/git.svg"
-import github  from  "../assets/techs/github.svg"
+import github  from  "/icons/github.svg"
 import tailwind  from  "../assets/techs/tailwind.svg"
 import netlify  from  "../assets/techs/netlify.svg"
 import erpnext  from  "../assets/techs/erpnext.svg"
 
-// import sparkar  from  "../assets/img/sparkar.svg"
+import sparkar  from  "/icons/sparkar.svg"
 import chatgpt from "../assets/techs/chatgpt.svg"
 import scss from "../assets/techs/scss.svg"
 import mongodb from "../assets/techs/mongodb.svg"
@@ -28,7 +28,7 @@ const tech = [
   { logo: tailwind },
   { logo: netlify },
   { logo: erpnext },
-  // { logo: sparkar },
+  { logo: sparkar },
   { logo: github },
   { logo: js },
   { logo: chatgpt },
