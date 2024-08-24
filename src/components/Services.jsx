@@ -5,7 +5,7 @@ function Services() {
 
   return (
     <div className="services-container">
-      <p className="subtitles">What I Do ?</p>
+      <p className="services-subtitles">What I Do ?</p>
       <h5 className="titles">Services</h5>
       <div className="cards-container">
         {services.map((service, index) => (

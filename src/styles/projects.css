@@ -17,6 +17,10 @@
     font-family: "Poppins", sans-serif;
 
 }
+.project-subtitle{
+    color: lightcyan;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .project-card::before {
     content: '';
     position: absolute;

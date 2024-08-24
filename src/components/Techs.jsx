@@ -4,17 +4,21 @@ import js  from  "/icons/js.svg"
 import react from "/icons/reactjs.svg";
 import vue from "/icons/vuejs.svg";
 import  nodejs from "/icons/nodejs.svg";
-import  bootstrap from  "../assets/techs/bootstrap.svg"
-import git  from  "../assets/techs/git.svg"
+import  bootstrap from  "/icons/bootstrap.svg"
+import git  from  "/icons/git.svg"
 import github  from  "/icons/github.svg"
-import tailwind  from  "../assets/techs/tailwind.svg"
-import netlify  from  "../assets/techs/netlify.svg"
-import erpnext  from  "../assets/techs/erpnext.svg"
-
+import tailwind  from  "/icons/tailwind.svg"
+import netlify  from  "/icons/netlify.svg"
+import erpnext  from  "/icons/erpnext.svg"
 import sparkar  from  "/icons/sparkar.svg"
-import chatgpt from "../assets/techs/chatgpt.svg"
-import scss from "../assets/techs/scss.svg"
-import mongodb from "../assets/techs/mongodb.svg"
+import chatgpt from "/icons/chatgpt.svg"
+import scss from "/icons/scss.svg"
+import mongodb from "/icons/mongodb.svg"
+import frappe from "/icons/frappe.svg"
+import angular from "/icons/angular.svg"
+import firebase from "/icons/firebase.svg"
+import postman from "/icons/postman.svg"
+import vscode from "/icons/vscode.svg"
 import "../styles/techs.css"
 import { useEffect, useRef } from 'react';
 const tech = [
@@ -34,6 +38,11 @@ const tech = [
   { logo: chatgpt },
   { logo: mongodb},
   { logo: scss },
+  { logo: frappe },
+  { logo: vscode },
+  { logo: postman },
+  { logo: firebase },
+  { logo: angular },
 ];
 
 function Techs() {
