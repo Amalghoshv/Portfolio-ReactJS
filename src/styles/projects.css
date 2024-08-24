@@ -51,6 +51,11 @@
     transform: scale(1.05);
 }
 
+  
+  .projects-container .swiper-pagination-bullet-active {
+    background-color: darkred !important;
+    opacity: 1 !important;
+  }
 .card-img {
     width: 100%;
     height: 100%;

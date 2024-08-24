@@ -16,7 +16,7 @@ function Projects() {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
+        
         modules={[Pagination, Navigation]}
         className="mySwiper"
         breakpoints={{
