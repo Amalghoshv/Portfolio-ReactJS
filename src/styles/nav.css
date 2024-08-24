@@ -6,10 +6,11 @@ nav {
   z-index: 1000;
   transition: background-color 0.3s ease-in-out;
 }
-
-.navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.8);
+.navbar.scrolled,
+.navbar.active {
+  background-color: rgba(0, 0, 0, 0.8); /* Light black background */
 }
+
 
 .container {
   display: flex;
@@ -47,7 +48,6 @@ nav {
   color: white;
   text-decoration: none;
   font-size: 25px;
-  /* transition: color 0.3s ease; */
   transition: transform 0.3s ease;
 }
 
@@ -74,7 +74,7 @@ nav {
     top: 60px;
     left: 0;
     width: 100%;
-    background-image: url('../assets/img/navbg.png');
+    background-image: url('/img/navbg.png');
     background-position: left;
    
     background-blend-mode: soft-light;
@@ -96,6 +96,7 @@ nav {
 
   .nav.open {
     display: flex;
+    margin-top: 20px; 
   }
 
   .item {
