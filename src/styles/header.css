@@ -73,12 +73,12 @@
   }
   .up{
     font-size: 60px;
-    margin-top: 30%;
+    margin-top: 40%;
   }
   .right-header{
     width:350px;
     height:350px;
-    margin-top: -30px;
+    margin-top: -10px;
     z-index: -10;
     
     
