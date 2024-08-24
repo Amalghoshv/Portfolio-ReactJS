@@ -1,6 +1,6 @@
 .projects-container {
     padding: 20px;
-    margin: 0 auto;
+    margin: 0px 20px;
     max-width: 100%; 
     overflow: hidden; 
 }
@@ -17,7 +17,20 @@
     font-family: "Poppins", sans-serif;
 
 }
-
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(img/mesh-346.png);
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); 
+    z-index: -1; 
+    border-radius: inherit;
+}
 .project-card {
     position: relative; 
     width: 100%; 
@@ -36,7 +49,7 @@
 
 .card-img {
     width: 100%;
-    height: 300px;
+    height: 100%;
     border-radius: 20px;
     mask-image: url(/img/splash.svg);
     mask-mode: alpha;
