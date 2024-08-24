@@ -24,6 +24,10 @@ nav {
   font-size: 50px;
   font-family: "New Amsterdam", sans-serif;
   text-decoration: none;
+  transition: font-size 0.3s ease-in-out;
+}
+.logo.small {
+  font-size: 35px; /* Adjust this size as needed */
 }
 
 .hamburger-react {

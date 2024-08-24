@@ -12,10 +12,13 @@ function Nav() {
       });
         const handleScroll = () => {
           const navbar = document.querySelector(".navbar");
+          const logo = document.querySelector(".logo");
           if (window.scrollY > 50 || isOpen) {
             navbar.classList.add("scrolled");
+            logo.classList.add("small");
           } else {
             navbar.classList.remove("scrolled");
+            logo.classList.remove("small");
           }
         };
         window.addEventListener("scroll", handleScroll);
@@ -28,11 +31,8 @@ function Nav() {
         setOpen(!isOpen);
         const navbar = document.querySelector(".navbar");
     
-        if (!isOpen) {
+        if (!isOpen || window.scrollY > 50) {
           navbar.classList.add("scrolled", "active");
-        } else if (window.scrollY > 50) {
-          navbar.classList.add("scrolled");
-          navbar.classList.remove("active");
         } else {
           navbar.classList.remove("scrolled", "active");
         }
