@@ -53,7 +53,7 @@
 
   
   .projects-container .swiper-pagination-bullet-active {
-    background-color: darkred !important;
+    background-color: red !important;
     opacity: 1 !important;
   }
 .card-img {
