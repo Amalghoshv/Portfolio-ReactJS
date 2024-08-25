@@ -10,13 +10,16 @@ nav {
 .navbar.active {
   background-color: rgba(0, 0, 0, 0.8); /* Light black background */
 }
-
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 10%;
+  padding: 25px 5%;
 }
 
 .logo {
@@ -40,6 +43,14 @@ nav {
 .nav {
   display: flex;
   list-style: none;
+}
+
+.nav-leftside{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 2;
+  margin-right: 5%;
 }
 
 .item {
