@@ -95,7 +95,7 @@ function Contact() {
                     // size={40}
                     className="form-control"
                     onChange={handleChange}
-                    placeholder="Write Something"
+                    placeholder="Write your Message"
                   ></textarea>
                 </div>
                 <div className="form-group">

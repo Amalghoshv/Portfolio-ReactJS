@@ -50,6 +50,7 @@ function Projects() {
             />
           </div>
         </SwiperSlide>
+       
         <SwiperSlide>
           <div className="project-card">
             <h1 className="project-title">Expense Tracker</h1>
@@ -60,6 +61,17 @@ function Projects() {
               className="card-img"
               src="/img/expense-tracker.jpeg"
               alt="fuel expense"
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="project-card">
+            <h1 className="project-title">Meta Filters-Insta,Facebook</h1>
+            <p className="project-subtitle">Instagram and Facebook filters still live </p>
+            <img
+              className="card-img"
+              src="/img/filterimg.png"
+              alt="filterimg"
             />
           </div>
         </SwiperSlide>

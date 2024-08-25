@@ -28,7 +28,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(img/mesh-346.png);
+    background-image: url(/img/mesh-346.png);
     background-size: cover;
     background-position: center;
     filter: blur(5px); 

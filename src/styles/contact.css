@@ -126,12 +126,12 @@ textarea:focus{
     }
     .title{
         color:red;
-        font-size: 20px;
+        font-size: 30px;
         
     }
     .contact-form{
-        width: 300px;
-        height:350px;
+        width: 320px;
+        height:360px;
         margin:0 auto;
         margin-top: 0;
         display: flex;
@@ -139,8 +139,9 @@ textarea:focus{
         justify-content: center;
     }
     input ,textarea{
-        width:250px; 
-        margin-top: 5px;   
+        width:270px; 
+        margin-top: 5px; 
+          
      }
      .contact-img-div{
         display: block;
@@ -151,14 +152,14 @@ textarea:focus{
         margin:0 auto;
        
      }
+     ::placeholder{
+        font-size: 12px;
+        font-family: monospace;
+     }
      .flex{
         margin: 0 auto;
         display: block;
         
       }
-     /* .flex{
-        display: block;  
-    
-    } */
    
     }

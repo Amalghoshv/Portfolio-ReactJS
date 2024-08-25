@@ -42,7 +42,7 @@ function Nav() {
     <div>
       <nav className={`navbar ${isOpen?'active': ""}`}>
         <div className="container">
-          <a className="logo" href="#">
+          <a className="logo" href="#header">
             Ghoshdev
           </a>
           <Hamburger className="hamburger-react" toggled={isOpen} toggle={handleToggle} color="red" />

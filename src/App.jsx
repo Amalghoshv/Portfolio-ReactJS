@@ -19,7 +19,7 @@ const App = () => {
     <BrowserRouter>
       <Nav />
       <div id="header">
-        <Header />
+        <Header/>
       </div>
       <div id="about">
         <About />
@@ -34,7 +34,6 @@ const App = () => {
       <div id="contact" data-aos="fade-up">
         <Contact />
       </div>
-
       <Footer />
     </BrowserRouter>
   );
