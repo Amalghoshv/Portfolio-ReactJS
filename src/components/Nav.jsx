@@ -4,9 +4,11 @@ import Toggle from "react-toggle";
 import SmoothScroll from "smooth-scroll";
 import { useEffect, useState } from "react";
 import { Spin as Hamburger } from "hamburger-react";
+
 function Nav() {
   const [isOpen, setOpen] = useState(false);
   const [isDark, setIsDark] = useState(true);
+
   useEffect(() => {
     new SmoothScroll('a[href*="#"]', {
       speed: 800,
@@ -16,6 +18,7 @@ function Nav() {
     const handleScroll = () => {
       const navbar = document.querySelector(".navbar");
       const logo = document.querySelector(".logo");
+      
       if (window.scrollY > 50 || isOpen) {
         navbar.classList.add("scrolled");
         logo.classList.add("small");
