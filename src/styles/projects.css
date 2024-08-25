@@ -58,7 +58,7 @@
   }
 .card-img {
     width: 100%;
-    height: 100%;
+    height: 70%;
     border-radius: 20px;
     mask-image: url(/img/splash.svg);
     mask-mode: alpha;

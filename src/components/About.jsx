@@ -22,10 +22,11 @@ function About() {
           alt="avatar"
         />
       </div>
-      <div className="about-caption">
+      <div className="about-caption"  >
         <h2 className="section-title"  data-aos="fade-up"
     >About Me</h2>
-        <p className="about-p">
+    <div>
+    <p className="about-p" data-aos="fade-up">
           Hello! I&apos;m Amalghosh,a passionate web developer specializing in
           frontend technologies. My current focus is on building dynamic and
           user-friendly interfaces using tools like React.js and Vue.js. I’m
@@ -35,8 +36,11 @@ function About() {
           trends to keep my skills sharp.
         </p>
         <button className="btn-cv"  onClick={handleDownload}>Download CV</button>
+
+    </div>
+    
       </div>
-      <div className="blob">
+      <div className="blob" >
         <img src="/img/blob1.svg" className="blob-img" alt="blob" />
       </div>
     </div>

@@ -123,7 +123,7 @@ function Contact() {
         pauseOnFocusLoss 
         draggable 
         pauseOnHover 
-        theme="light" 
+        theme="dark" 
       />
     </div>
   );
