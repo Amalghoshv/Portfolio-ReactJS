@@ -70,6 +70,12 @@ nav {
   color: red;
   transform: translate3d(10px, -10px, 20px);
 }
+.toggle-style .react-toggle-track-check ,.toggle-style .react-toggle-track-x{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Ensure no extra padding affects centering */
+}
 
 @media (max-width: 768px) {
   .hamburger-react {
@@ -81,6 +87,10 @@ nav {
     align-items: center;
     padding: 20px;
   }
+  .toggle-style.react-toggle--checked .react-toggle-track {
+    background-color: red !important;
+  }
+
 
   .nav {
     display: none;

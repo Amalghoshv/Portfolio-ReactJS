@@ -106,6 +106,7 @@ body.light-mode .navbar .link {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   transition: transform 0.3s ease;
 }
+
 @media (max-width: 768px) {
   .light-mode .nav{
   

@@ -18,7 +18,7 @@ function Nav() {
     const handleScroll = () => {
       const navbar = document.querySelector(".navbar");
       const logo = document.querySelector(".logo");
-      
+
       if (window.scrollY > 50 || isOpen) {
         navbar.classList.add("scrolled");
         logo.classList.add("small");
@@ -102,6 +102,7 @@ function Nav() {
           </div>
           <div className="dark-toggle">
             <Toggle
+            className='toggle-style'
               checked={isDark}
               onChange={({ target }) => setIsDark(target.checked)}
               icons={{ checked: "🌙", unchecked: "🔆" }}
