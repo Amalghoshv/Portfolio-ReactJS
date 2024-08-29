@@ -66,7 +66,7 @@ nav {
   transition: transform 0.3s ease;
 }
 
-.link:hover {
+.navbar .link:hover {
   color: red;
   transform: translate3d(10px, -10px, 20px);
 }
