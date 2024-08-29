@@ -74,7 +74,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0; /* Ensure no extra padding affects centering */
+  padding: 0; 
 }
 
 @media (max-width: 768px) {
