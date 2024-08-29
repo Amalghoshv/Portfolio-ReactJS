@@ -1,7 +1,7 @@
 import "../styles/about.css";
 
 function About() {
-  const aboutImg= "/img/avatar.png";
+  const aboutImg= "/img/avatar.webp";
   const handleDownload = () => {
     const cvLink = '/cv.pdf'
     const link = document.createElement('a');
