@@ -12,9 +12,11 @@ function Projects() {
     <div className="projects-container">
       <h5 className="projects-heading">Projects</h5>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={30} 
+        autoplay
         pagination={{
           clickable: true,
+          
         }}
         
         modules={[Pagination, Navigation]}
@@ -38,6 +40,7 @@ function Projects() {
         }}
       >
         <SwiperSlide>
+          <a href="https://fuel-expense-tracker-weather-widget.vercel.app/" target="_blank">
           <div className="project-card">
             <h1 className="project-title">Fuel Expense Calculator</h1>
             <p className="project-subtitle">
@@ -49,9 +52,11 @@ function Projects() {
               alt="fuel expense"
             />
           </div>
+          </a> 
         </SwiperSlide>
        
         <SwiperSlide>
+          <a href="https://66bf8e40ac8fdb7977807a96--expense-tracker-vuejs01.netlify.app/" target="_blank">
           <div className="project-card">
             <h1 className="project-title">Expense Tracker</h1>
             <p className="project-subtitle">
@@ -63,8 +68,10 @@ function Projects() {
               alt="fuel expense"
             />
           </div>
+          </a>
         </SwiperSlide>
         <SwiperSlide>
+          <a  href="https://www.instagram.com/_ghosh__/" target="_blank">
           <div className="project-card">
             <h1 className="project-title">Meta Filters-Insta,Facebook</h1>
             <p className="project-subtitle">Instagram and Facebook filters still live </p>
@@ -74,6 +81,7 @@ function Projects() {
               alt="filterimg"
             />
           </div>
+          </a>
         </SwiperSlide>
         <SwiperSlide>
           <div className="project-card">
@@ -85,6 +93,19 @@ function Projects() {
               alt="fuel expense"
             />
           </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href="https://netflix-react-nu.vercel.app/" target="_blank">
+          <div className="project-card">
+            <h1 className="project-title">Netflix Home Clone</h1>
+            <p className="project-subtitle">Netflix clone made using React js</p>
+            <img
+              className="card-img"
+              src="/img/netflix.jpeg"
+              alt="netflix"
+            />
+          </div>
+          </a>
         </SwiperSlide>
       </Swiper>
     </div>
