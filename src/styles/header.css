@@ -52,7 +52,7 @@
   .left-header {
     flex: 1;
     margin-left: 50px;
-    width: 60%;
+    width: 65%;
   }
   
   @keyframes upDown {
@@ -85,16 +85,12 @@
     height:350px;
     margin-top: -10px;
     z-index: -10;
-    
-    
   }
   .header-content{
     display: block;
   }
   .left-header {
     flex: 1;
-    
-
     
   }
   .down{
@@ -104,18 +100,14 @@
     margin-top: 150px;
     font-size: 19px;
     z-index: -1;
-    
-    
   }
   
 }
 
-/* Small devices (landscape phones, 576px and up) */
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   /* Styles for small devices */
 }
-
-/* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   /* Styles for tablets */
 }
@@ -125,11 +117,10 @@
   /* Styles for desktops */
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .header{
     height:100vh
   }
-  /* Styles for large desktops */
+ 
 }
 
