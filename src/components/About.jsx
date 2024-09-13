@@ -11,7 +11,21 @@ function About() {
     link.click();
   
     document.body.removeChild(link);
+    handleCvDownload()
+
+    
   };
+
+  const handleCvDownload = () => {
+    if (window.gtag) {
+      window.gtag('event', 'download', {
+        event_category: 'User',
+        event_label: 'CV Download',
+        value: 1,
+      });
+    }
+  };
+  
   
   return (
     <div className="about">

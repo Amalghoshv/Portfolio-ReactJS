@@ -2,7 +2,6 @@
 import PropTypes from 'prop-types';
 import "./card.css"
 const Card = ({ logo, heading, description, customClass }) => {
-  console.log('logo ===>', logo);
   
   return (
     <div className={`card ${customClass}`}>
