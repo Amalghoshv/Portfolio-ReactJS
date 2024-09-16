@@ -2,20 +2,6 @@ import "../styles/about.css";
 
 function About() {
   const aboutImg= "/img/avatar.webp";
-  const handleDownload = () => {
-    const cvLink = '/cv.pdf'
-    const link = document.createElement('a');
-    link.href = cvLink;
-    link.download = 'Amalghosh_CV.pdf';
-    document.body.appendChild(link);
-    link.click();
-  
-    document.body.removeChild(link);
-    handleCvDownload()
-
-    
-  };
-
   const handleCvDownload = () => {
     if (window.gtag) {
       window.gtag('event', 'download', {
@@ -25,6 +11,20 @@ function About() {
       });
     }
   };
+  const handleDownload = () => {
+    const cvLink = '/cv.pdf'
+    const link = document.createElement('a');
+    link.href = cvLink;
+    link.download = 'Amalghosh_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    handleCvDownload()
+
+    
+  };
+
+
   
   
   return (
