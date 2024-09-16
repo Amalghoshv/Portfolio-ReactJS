@@ -20,13 +20,8 @@ function About() {
     link.click();
     document.body.removeChild(link);
     handleCvDownload()
-
-    
   };
 
-
-  
-  
   return (
     <div className="about">
       <div className="about-img-holder" data-aos="fade-up">
@@ -52,7 +47,6 @@ function About() {
         <button className="btn-cv"  onClick={handleDownload}>Download CV</button>
 
     </div>
-    
       </div>
       <div className="blob" >
         <img src="/img/blob1.svg" className="blob-img" alt="blob" />
