@@ -3,15 +3,17 @@
     overflow-x: scroll;
     white-space: nowrap;
     padding: 10px;
-    /* margin: 0px 20px; */
     backdrop-filter: blur(4px) saturate(0%);
     -webkit-backdrop-filter: blur(4px) saturate(0%);
     background-color: rgba(208, 2, 27, 0.02);
-    /* border-radius: 12px; */
     border: 1px solid rgba(255, 255, 255, 0.125);
-    scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; 
+  -ms-overflow-style: none; 
+  } 
+  .techs-container {
+    cursor: grab;
   }
+
   .techs-container:active {
     cursor: grabbing;
   }

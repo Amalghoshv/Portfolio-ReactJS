@@ -1,3 +1,4 @@
+
 import html from "/icons/html.svg";
 import css from "/icons/css.svg";
 import js from "/icons/js.svg";
@@ -21,7 +22,7 @@ import firebase from "/icons/firebase.svg";
 import postman from "/icons/postman.svg";
 import vscode from "/icons/vscode.svg";
 import "../styles/techs.css";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef ,useState} from "react";
 const tech = [
   { logo: html },
   { logo: css },
@@ -49,10 +50,36 @@ const tech = [
 
 function Techs() {
   const scrollRef = useRef(null);
+  
+
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
   let scrollPosition = 0;
+  // useEffect(() => {
+  //   const smoothScroll = () => {
+  //     if (!isDragging && scrollRef.current) {
+  //       scrollPosition += 0.5;
+  //       scrollRef.current.scrollBy({ left: 1, behavior: "smooth" });
+
+  //       if (scrollPosition >= scrollRef.current.scrollWidth / 2) {
+  //         scrollPosition = 0;
+  //         scrollRef.current.scrollLeft = 0;
+  //       }
+  //     }
+
+  //     requestAnimationFrame(smoothScroll);
+  //   };
+
+  //   requestAnimationFrame(smoothScroll);
+
+  //   return () => cancelAnimationFrame(smoothScroll);
+  // }, [isDragging]);
+
   useEffect(() => {
     const smoothScroll = () => {
-      if (scrollRef.current) {
+      if (!isDragging && scrollRef.current) {
         scrollPosition += 0.5;
         scrollRef.current.scrollBy({ left: 1, behavior: "smooth" });
 
@@ -61,16 +88,42 @@ function Techs() {
           scrollRef.current.scrollLeft = 0;
         }
       }
-
       requestAnimationFrame(smoothScroll);
     };
 
     requestAnimationFrame(smoothScroll);
 
     return () => cancelAnimationFrame(smoothScroll);
-  }, []);
+  }, [isDragging]);
+
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setStartX(e.pageX - scrollRef.current.offsetLeft);
+    setScrollLeft(scrollRef.current.scrollLeft);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX) * 2; // Adjust scrolling speed
+    scrollRef.current.scrollLeft = scrollLeft - walk;
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDragging(false);
+  };
+  
+
   return (
-    <div className="techs-container" ref={scrollRef}>
+    <div className="techs-container" ref={scrollRef} onMouseDown={handleMouseDown}
+    onMouseLeave={handleMouseLeave}
+    onMouseUp={handleMouseUp}
+    onMouseMove={handleMouseMove}>
       <div className="techs-scroll">
         {tech.map((technology, index) => (
           <div key={index} className="tech-item">
